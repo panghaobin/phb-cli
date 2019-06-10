@@ -15,7 +15,6 @@ export class RentalListComponent implements OnInit {
 
   ngOnInit() {
     const testNumber: number = 23;
-    this.testVariable = this.rentalService.testFunction(testNumber);
 
     const rentalObservable = this.rentalService.getRentals();
     rentalObservable.subscribe(
